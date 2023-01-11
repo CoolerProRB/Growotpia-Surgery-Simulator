@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+    background-image: url("sunnyBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    background-color: rgba(113, 173, 207, 0.918);
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+header ul li{
+    display: inline;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+header ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: #f2f2f2;
+}
+.dropbtn {
+    background-color: #4caf4f00;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+.content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.surg{
+    width: 90%;
+    height: 85vh;
+    background-color: #6c95cabd;
+    border: 7px solid #5784be;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px;
+    margin-top: 20px;
+    overflow: hidden;
+    overflow: scroll;
+}
+.dirt{
+    background-image: url("ItemSprites.ico");
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+}
+.surg h1{
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 40px;
+}
+.surg p{
+    font-size: 30px;
+    margin-left: 10px;
+    color: rgb(230, 198, 140);
+}
+#pulse,#temp,#incision{
+    margin-right: 20px;
+}
+.tools{
+    display: flex;
+    flex-wrap: wrap;
+}
+.empty{
+    background-image: url("tool/empty.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tools button{
+    background-color: #3e8e4100;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+#giveup,#start{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 5px;
+    background-color: rgb(121, 192, 197);
+    color: rgb(190, 175, 146);
+    text-shadow: 1px 1px 1px 1px;
+    border: none;
+    box-shadow: solid black 1px 1px 1px 1px;
+    cursor: pointer;
+}
+.surg::-webkit-scrollbar{
+    width: 0px;
+}
+.antibio{
+    background-image: url("tool/antibio.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sponge{
+    background-image: url("tool/sponge.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.anes{
+    background-image: url("tool/anes.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.antisep{
+    background-image: url("tool/antisep.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clamp{
+    background-image: url("tool/clamp.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.def{
+    background-image: url("tool/def.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Century Gothic;
+}
+.lab{
+    background-image: url("tool/lab.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pins{
+    background-image: url("tool/pins.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.scal{
+    background-image: url("tool/scal.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.splint{
+    background-image: url("tool/splint.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.stit{
+    background-image: url("tool/stit.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.trans{
+    background-image: url("tool/trans.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ultra{
+    background-image: url("tool/ultra.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fix{
+    background-image: url("tool/fix.png");
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

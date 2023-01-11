@@ -1,0 +1,79 @@
+<?php
+session_start();
+$_SESSION["code"] = "";
+$username;
+if(isset($_SESSION["username"])){
+    $username = $_SESSION["username"];
+}
+else{
+    $username = "";
+}
+?>
+<!doctype html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="ItemSprites.ico">
+        <link rel="stylesheet" href="surg.css">
+        <title>Growtopia - Home</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="surg.php">Surgery Simulator</a></li>
+            </ul>
+            <div class="dropdown">
+                <?php
+                if(!empty($username)){
+                    echo '<button class="dropbtn">' . $username . '</button><div class="content"><a href="profile.php">Profile</a><a href="logout.php">Log out</a></div>';
+                }
+                else{
+                    echo '<button class="dropbtn" onClick=login()>Login</button>';
+                }
+                ?>
+                <script>
+                    function login(){
+                        location.href = "index.php";
+                    }
+                </script>
+            </div>
+        </header>
+        <div class="main">
+            <div class="surg" id="surg">
+                <h1><span class="dirt"></span>Surgery Simulator</h1>
+                <p id="special"></p>
+                <p id="case"></p>
+                <p>Pulse: <span id="pulse"></span> Status: <span id="status"></span></p>
+                <p>Temp: <span id="temp"></span> Operation site: <span id="site"></span></p>
+                <p id="incisionMain">Incisions: <span id="incision"></span> Bones: <span id="bones"></span></p>
+                <p id="blood"><span id="losing"></span></p>
+                <p id="fever"><span id="speed"></span></p>
+                <p id="hard"></p>
+                <p id="heart"></p>
+                <br>
+                <p id="process"></p>
+                <div class="tools">
+                    <button id="def" onclick=reopen()><span class="empty"></span></button>
+                    <button id="sponge" onclick=reopen()><span class="empty"></span></button>
+                    <button id="anes" onclick=reopen()><span class="empty"></span></button>
+                    <button id="stit" onclick=reopen()><span class="empty"></span></button>
+                    <button id="scal" onclick=reopen()><span class="empty"></span></button>
+                    <button id="ultra" onclick=reopen()><span class="empty"></span></button>
+                    <button id="antisep" onclick=reopen()><span class="empty"></span></button>
+                    <button id="fix" onclick=reopen()><span class="empty"></span></button>
+                    <button id="lab" onclick=reopen()><span class="empty"></span></button>
+                    <button id="antibio" onclick=reopen()><span class="empty"></span></button>
+                    <button id="trans" onclick=reopen()><span class="empty"></span></button>
+                    <button id="splint" onclick=reopen()><span class="empty"></span></button>
+                    <button id="pins" onclick=reopen()><span class="empty"></span></button>
+                    <button id="clamp" onclick=reopen()><span class="empty"></span></button>
+                </div>
+                <button id="start" onclick="start()">Start</button>
+                <button id="giveup" onclick="giveUp()" style="display: none;">Give Up!</button>
+            </div>
+        </div>
+        <script src="surg.js"></script>
+    </body>
+</html>
