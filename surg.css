@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url("sunnyBG.png");
+    background-image: url("image/sunnyBG.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -83,7 +83,7 @@ header ul li a:hover{
     overflow: scroll;
 }
 .dirt{
-    background-image: url("ItemSprites.ico");
+    background-image: url("image/dirt.png");
     height: 32px;
     width: 32px;
     display: inline-block;
@@ -133,8 +133,9 @@ header ul li a:hover{
     color: rgb(190, 175, 146);
     text-shadow: 1px 1px 1px 1px;
     border: none;
-    box-shadow: solid black 1px 1px 1px 1px;
+    /*box-shadow: 1px 1px 1px 1px black;*/
     cursor: pointer;
+    border-radius: 4px;
 }
 .surg::-webkit-scrollbar{
     width: 0px;

@@ -257,7 +257,7 @@ function start(){
 }
 
 function giveUp(){
-    location.href = "surg.php";
+    location.href = "index.html";
 }
 
 function run(){
